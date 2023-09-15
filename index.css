@@ -1,0 +1,498 @@
+@font-face {
+    font-family: "Audiowide";
+    src:
+        url("./fonts/audiowide-regular-webfont.eot") format("eot") tech(color-COLRv1),
+        url("./fonts/audiowide-regular-webfont.woff") format("woff"),
+        url("./fonts/audiowide-regular-webfont.ttf") format("ttf");
+}
+
+
+body {
+    margin: 0;
+    background-color: #000;
+}
+
+/* HEADER 1 */
+
+.header {
+    background-color: rgba(33, 33, 33, 0.8);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0;
+
+    @media screen and (max-width: 800px) {
+        width: 100%;
+    }
+}
+
+.menu {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: auto;
+
+    @media screen and (max-width: 1200px) {
+        display: none;
+    }
+}
+
+.menu-burger{
+    display: none;
+    height: 30px;
+    margin: auto 20px;
+
+    @media screen and (max-width: 1200px) {
+        display: block;
+    }
+}
+
+.menu__item {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+/* SECTION 1 */
+
+.section-1 {
+    background-image: url("./images/bg-home.jpg");
+    background-size: cover;
+    flex-direction: column;
+    object-fit: cover;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    padding-top: 100px;
+
+    @media screen and (max-width: 800px) {
+        height: 100%;
+    }
+}
+
+.bg-image {
+    object-fit: cover;
+    z-index: 0;
+}
+
+/* PRESENTATION */
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50%;
+    margin: auto;
+}
+
+.title h1 {
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    margin: 0;
+    font-family: "Audiowide";
+
+    @media screen and (max-width: 800px) {
+        font-size: 2em;
+    }
+}
+
+.title h2 {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+
+    @media screen and (max-width: 800px) {
+        font-size: 1em;
+    }
+}
+
+.title button {
+    width: 150px;
+    min-height: 40px;
+    margin: auto;
+    background-color: #000;
+    color: grey;
+    outline: none;
+    border: none;
+}
+
+.satellite {
+    z-index: 100;
+    width: 90%;
+    
+}
+
+
+.presentation {
+    display: flex;
+    height: 50%;
+    width: 60%;
+    z-index: 2;
+    margin: auto;
+    padding: 20px;
+
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+    }
+}
+
+/* PROJETS */
+
+.projects {
+    height: 50%;
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+}
+
+.projects__title {
+    background-color: rgba(33, 33, 33, 0.8);
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    display: flex;
+}
+
+.projects__title h1 {
+    margin: auto;
+    color: grey;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: "Audiowide";
+}
+
+.carousel {
+    display: flex;
+
+    @media screen and (max-width: 800px) {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.carousel img {
+    margin: 0;
+    padding: 0;
+    width: 25%;
+
+    @media screen and (max-width: 800px) {
+        width: 100%;
+    }
+
+}
+
+/* SECTION - 2 */
+
+.section-2 {
+    height: 100vh;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: 800px) {
+        height: 100%;
+    }
+}
+
+.mission {
+    background-color: rgb(98, 1, 48);
+    margin: 0px;
+    padding: 0;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+    @media screen and (max-width: 800px) {
+        height: 100px;
+    }
+}
+
+.mission h2 {
+    text-align: center;
+    margin: auto;
+    color: white;
+    font-family: "Audiowide";
+    font-size: 2em;
+
+    @media screen and (max-width: 1000px) {
+        font-size: 100%;
+    }
+}
+
+.mission a {
+    text-align: center;
+    margin: auto;
+    color: white;
+    font-size: 100%;
+
+    @media screen and (max-width: 1000px) {
+        font-size: 100%;
+    }
+}
+
+.mission p {
+    text-align: center;
+    margin: auto;
+    color: white;
+    width: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 100%;
+
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+        width: 100%;
+        font-size: 80%;
+    }
+}
+
+.articles {
+    margin: auto;
+    height: 50%;
+    width: 60%;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+    }
+}
+
+.features-video {
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+
+    @media screen and (max-width: 800px) {
+        width: 100%;
+    }
+}
+
+.articles h2 {
+    color: white;
+    font-family: "Audiowide";
+    margin: 0;
+
+    @media screen and (max-width: 1000px) {
+        font-size: 100%;
+    }
+}
+
+.features-video img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.features-video-div{
+    height: 90%;
+}
+
+.latest-blog {
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: 800px) {
+        width: 100%;
+    }
+}
+
+
+
+.latest-blog .blog-1 {
+    color: white;
+    display: flex;
+    height: 40%;
+}
+
+.latest-blog .blog-1 img{
+    object-fit: contain;
+    height: 100%;
+}
+
+.latest-blog .blog-1 button{
+    margin: auto 0 auto auto;
+    height: 30px;
+    background-color: rgb(60, 14, 56);
+    color: white;
+    outline: none;
+    border: none;
+}
+
+.latest-blog .blog-1 h2 {
+    color: white;
+    display: flex;
+    margin: 0;
+    font-size: 1rem;
+
+    @media screen and (max-width: 1000px) {
+        font-size: 80%;
+    }
+}
+
+.latest-blog .blog-1 h3 {
+    color: white;
+    display: flex;
+    font-size: 0.8em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    margin: 0;
+
+        
+    @media screen and (max-width: 1000px) {
+        font-size: 70%;
+    }
+}
+
+.blog-1-desc{
+    padding: 10px;
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+}
+
+.blog-2-desc{
+    padding: 10px;
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+}
+
+.latest-blog .blog-2 {
+    color: white;
+    display: flex;
+    height: 40%;
+}
+
+
+.latest-blog .blog-2 img{
+    object-fit: contain;
+    height: 100%;
+}
+
+.latest-blog .blog-2 button{
+    height: 30px;
+    margin: auto 0 auto auto;
+    background-color: rgb(60, 14, 56);
+    color: white;
+    outline: none;
+    border: none;
+}
+
+.latest-blog .blog-2 h2 {
+    color: white;
+    display: flex;
+    margin: 0;
+    font-size: 1em;
+
+        
+    @media screen and (max-width: 1000px) {
+        font-size: 80%;
+    }
+}
+
+
+.latest-blog .blog-2 h3 {
+    color: white;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 0.8em;
+    margin: 0;
+
+        
+    @media screen and (max-width: 1000px) {
+        font-size: 70%;
+    }
+}
+
+.bar{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid white;
+    color: #FFF;
+    margin: auto;
+    width: 100%;
+}
+
+/* SOCIAL MEDIA */
+
+.social-media {
+    background-color: rgb(163, 163, 163);
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    display: flex;
+}
+
+.social-media h2 {
+    margin: auto;
+    color: white;
+    font-family: "Audiowide";
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    text-align: left;
+
+
+    @media screen and (max-width: 1000px) {
+        font-size: 100%;
+        width: 90%;
+    }
+}
+
+.social-media div{
+    width: 30%;
+    display: flex;
+}
+
+.social-media svg{
+    height: 50%;
+    margin: auto;
+
+    @media screen and (max-width: 1000px) {
+        height: 100%;
+        margin: auto;
+    }
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #FFF;
+    height: 100px;
+    display: flex;
+}
+
+.footer h2 {
+    font-size: 100%;
+    width: 50%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    text-align: center;
+
+    @media screen and (max-width: 1000px) {
+        font-size: 50%;
+    }
+}
